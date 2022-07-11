@@ -1,135 +1,133 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
-@media (max-width: 375px) {
-  .conteudo {
-    background-color: hsl(27, 66%, 92%);
-    height: 100vh;
-    font-family: "DM Sans", sans-serif;
-  }
-  .cartao-total {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    gap: 16px;
-  }
-  .cartao-1 {
-    display: flex;
-    justify-content: center;
-  }
-  .cabecalho {
-    display: flex;
-    align-items: center;
-    width: 350px;
-    background: hsl(10, 79%, 65%);
-    justify-content: space-around;
-    height: 100px;
-    border-radius: 7px;
-    gap: 100px;
-  }
-  .logo img {
-    width: 60px;
-  }
-  .titulo-valor {
-    display: flex;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: hsl(33, 100%, 98%);
-  }
-  .valor-span {
-    font-size: 27px;
-    font-weight: 700;
-  }
-  .conteudo-centro {
-    background: white;
-    width: 350px;
-    border-radius: 7px;
-  }
-  .titulo {
-    font-size: 25px;
-    color: hsl(25, 47%, 15%);
-    padding: 30px 22px 60px;
-    font-weight: 700;
-  }
-  .barra-grafico {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 10px;
-  }
-  .coluna {
-    width: 35px;
-    background: hsl(10, 79%, 65%);
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  .dados-coluna {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  .dados-coluna span {
-    font-size: 12px;
-    color: hsl(28, 10%, 53%);
-  }
-  .mon {
-    height: 49px;
-  }
-  .tue {
-    height: 90px;
-  }
-  .wed {
-    height: 140px;
-    background-color: hsl(186, 34%, 60%);
-  }
-  .thu {
-    height: 80px;
-  }
-  .fri {
-    height: 61px;
-  }
-  .sat {
-    height: 120px;
-  }
-  .sun {
-    height: 75px;
-  }
-  .linha {
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-  }
-  .linha hr {
-    width: 310px;
-  }
-  .rodape {
-    display: flex;
-    margin-top: 55px;
-    margin-bottom: 30px;
-    justify-content: space-around;
-  }
-  .total-month {
-    display: flex;
-    flex-direction: column;
-  }
-  .from-month {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  .titulo-rodape {
-    color: hsl(28, 10%, 53%);
-  }
-  .valor-rodape {
-    font-size: 27px;
-    font-weight: 700;
-    color: hsl(25, 47%, 15%);
-  }
-  .porcentagem-rodape {
-    color: hsl(25, 47%, 15%);
-    font-weight: 700;
-  }
+.conteudo {
+  background-color: hsl(27, 66%, 92%);
+  height: 100vh;
+  font-family: "DM Sans", sans-serif;
+}
+.cartao-total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 16px;
+}
+.cartao-1 {
+  display: flex;
+  justify-content: center;
+}
+.cabecalho {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  background: hsl(10, 79%, 65%);
+  justify-content: space-around;
+  height: 100px;
+  border-radius: 7px;
+  gap: 100px;
+}
+.logo img {
+  width: 60px;
+}
+.titulo-valor {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: hsl(33, 100%, 98%);
+}
+.valor-span {
+  font-size: 27px;
+  font-weight: 700;
+}
+.conteudo-centro {
+  background: white;
+  width: 350px;
+  border-radius: 7px;
+}
+.titulo {
+  font-size: 25px;
+  color: hsl(25, 47%, 15%);
+  padding: 30px 22px 60px;
+  font-weight: 700;
+}
+.barra-grafico {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+}
+.coluna {
+  width: 35px;
+  background: hsl(10, 79%, 65%);
+  border-radius: 3px;
+  cursor: pointer;
+}
+.dados-coluna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.dados-coluna span {
+  font-size: 12px;
+  color: hsl(28, 10%, 53%);
+}
+.mon {
+  height: 49px;
+}
+.tue {
+  height: 90px;
+}
+.wed {
+  height: 140px;
+  background-color: hsl(186, 34%, 60%);
+}
+.thu {
+  height: 80px;
+}
+.fri {
+  height: 61px;
+}
+.sat {
+  height: 120px;
+}
+.sun {
+  height: 75px;
+}
+.linha {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.linha hr {
+  width: 310px;
+}
+.rodape {
+  display: flex;
+  margin-top: 55px;
+  margin-bottom: 30px;
+  justify-content: space-around;
+}
+.total-month {
+  display: flex;
+  flex-direction: column;
+}
+.from-month {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.titulo-rodape {
+  color: hsl(28, 10%, 53%);
+}
+.valor-rodape {
+  font-size: 27px;
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+}
+.porcentagem-rodape {
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
 }
