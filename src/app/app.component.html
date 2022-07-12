@@ -16,41 +16,12 @@
         <span>Spending - Last 7 days</span>
       </div>
       <div class="barra-grafico">
-        <div (mouseover)="mostrar()" class="dados-coluna">
-          <p *ngIf="esconder">{{result[0].amount}}</p>
-          <div class="coluna mon"></div>
-          <span>mon</span>
+        <div *ngFor="let item of result" class="dados-coluna">
+          <span class="amount">{{item.amount}}</span>
+          <div class="coluna" [ngStyle]="item.style"></div>
+          <span>{{item.day}}</span>
         </div>
-        <div class="dados-coluna">
-          <p *ngIf="esconder">{{result[1].amount}}</p>
-          <div class="coluna tue"></div>
-          <span>tue</span>
-        </div>
-        <div class="dados-coluna">
-          <p>{{result[2].amount}}</p>
-          <div class="coluna wed"></div>
-          <span>wed</span>
-        </div>
-        <div class="dados-coluna">
-          <p>{{result[3].amount}}</p>
-          <div class="coluna thu"></div>
-          <span>thu</span>
-        </div>
-        <div class="dados-coluna">
-          <p>{{result[4].amount}}</p>
-          <div class="coluna fri"></div>
-          <span>fri</span>
-        </div>
-        <div class="dados-coluna">
-          <p>{{result[5].amount}}</p>
-          <div class="coluna sat"></div>
-          <span>sat</span>
-        </div>
-        <div class="dados-coluna">
-          <p>{{result[6].amount}}</p>
-          <div class="coluna sun"></div>
-          <span>sun</span>
-        </div>
+
       </div>
       <div class="linha">
         <hr>

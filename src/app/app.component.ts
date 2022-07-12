@@ -10,12 +10,19 @@ export class AppComponent implements OnInit {
   result: any;
   urlJson = 'assets/data.json';
   public esconder: boolean = false;
+  style = {};
 
-  constructor(public http: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
     this.http.get<any>(this.urlJson).subscribe((resposta) => {
       this.result = resposta;
+      this.style = {
+        height: resposta.amount,
+        'background-color': 'black',
+      };
+      console.log(this.style);
+      console.log(resposta);
     });
   }
   mostrar(): void {
