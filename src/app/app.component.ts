@@ -9,11 +9,9 @@ export class AppComponent implements OnInit {
   title = 'expenses-chart';
   result: any;
   urlJson = 'assets/data.json';
-  public esconder: boolean = false;
   style = {};
 
   constructor(private http: HttpClient) {}
-
   ngOnInit(): void {
     this.http.get<any>(this.urlJson).subscribe((resposta) => {
       this.result = resposta;
@@ -24,8 +22,5 @@ export class AppComponent implements OnInit {
       console.log(this.style);
       console.log(resposta);
     });
-  }
-  mostrar(): void {
-    this.esconder = !this.esconder;
   }
 }
